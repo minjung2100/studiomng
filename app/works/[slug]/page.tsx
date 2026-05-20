@@ -67,7 +67,7 @@ export default async function WorkPage({
             <h1 className="text-2xl md:text-5xl font-black leading-tight text-black">
               {work.title}
             </h1>
-            <div className="flex flex-row md:flex-col items-center md:items-end gap-3 md:gap-1 md:text-right md:shrink-0">
+            <div className="flex flex-col md:items-end gap-1 md:text-right md:shrink-0">
               <p className="text-[11px] tracking-[0.2em] uppercase text-black/50">
                 {work.category}
               </p>
