@@ -36,7 +36,7 @@ export default function Works() {
   return (
     <section id="works" className="bg-white pt-24 pb-28">
       {/* Sticky + clipping wrapper */}
-      <div className="sticky top-24 z-40 overflow-hidden mb-6">
+      <div className="sticky top-14 z-40 overflow-hidden mb-6">
         <h2
           ref={headingRef}
           className="font-black uppercase leading-none text-[#E5F200] whitespace-nowrap block"
