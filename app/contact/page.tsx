@@ -16,7 +16,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact info — in-flow below on mobile, absolute right on desktop */}
-        <div className="relative z-10 px-8 pb-16 md:pb-0 text-right md:absolute md:right-16 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-6 md:gap-8">
+        <div className="relative z-10 px-8 pb-[22vh] md:pb-0 text-right md:absolute md:right-16 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-6 md:gap-8">
           <a
             href="mailto:STUDIOMNG@NAVER.COM"
             className="text-[5vw] md:text-[2.8vw] font-black uppercase text-black leading-none hover:text-[#E5F200] transition-colors"
