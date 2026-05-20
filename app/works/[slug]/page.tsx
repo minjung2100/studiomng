@@ -68,10 +68,10 @@ export default async function WorkPage({
               {work.title}
             </h1>
             <div className="flex flex-col md:items-end gap-1 md:text-right md:shrink-0">
+              <p className="text-[18px] md:text-[22px] font-bold text-black">{work.client}</p>
               <p className="text-[11px] tracking-[0.2em] uppercase text-black/50">
                 {work.category}
               </p>
-              <p className="text-[18px] md:text-[22px] font-bold text-black">{work.client}</p>
               <p className="text-[13px] text-black/60">{work.year}</p>
             </div>
           </div>
