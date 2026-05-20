@@ -7,7 +7,7 @@ export default function About() {
       >
         {/* flex-1 div — identical structure to Hero */}
         <div className="relative z-10 px-8 md:px-16 flex-none h-[65vh] flex items-center md:flex-1 md:h-auto">
-          <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[65vw] h-[65vw] max-w-[750px] max-h-[750px] bg-[#E5F200] rounded-full -z-10" />
+          <div className="absolute -left-[26vw] md:-left-40 top-1/2 -translate-y-1/2 w-[65vw] h-[65vw] max-w-[750px] max-h-[750px] bg-[#E5F200] rounded-full -z-10" />
           <h1 className="text-[18vw] md:text-[13vw] font-black leading-[0.85] uppercase text-black">
             studio
             <br />
