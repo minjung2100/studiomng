@@ -17,11 +17,11 @@ export default function About() {
           </h1>
 
           <div className="w-full md:max-w-[45vw]">
-            <p className="text-[18px] md:text-[25px] font-black text-black leading-snug mb-6">
+            <p className="text-[18px] md:text-[25px] font-black text-black leading-snug mb-6 md:mb-8">
               경계를 허물고,<br />
               디자인의 새로운 영역을 만들어갑니다.
             </p>
-            <p className="text-[14px] md:text-[25px] text-black leading-relaxed mb-4">
+            <p className="text-[14px] md:text-[25px] text-black leading-relaxed mb-4 md:mb-0">
               studio mng는 브랜드의 선명한 아이덴티티 수립부터<br />
               머무는 공간의 입체적인 경험까지,<br />
               경계 없는 크리에이티브를 지향하는 디자인 스튜디오입니다.
