@@ -15,10 +15,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "studio mng.",
   description:
-    "온·오프라인을 넘나들며 창의적인 디자인을 구현하는 디자인 컴퍼니",
+    "모든 이야기의 가치를 깊이 있는 공간 서사와 감각적인 연출로 증명하는 크리에이티브 디자인 스튜디오",
   openGraph: {
     title: "studio mng.",
-    description: "온·오프라인을 넘나들며 창의적인 디자인을 구현하는 디자인 컴퍼니",
+    description: "모든 이야기의 가치를 깊이 있는 공간 서사와 감각적인 연출로 증명하는 크리에이티브 디자인 스튜디오",
     url: "https://studiomng.com",
     siteName: "studio mng.",
     images: [
