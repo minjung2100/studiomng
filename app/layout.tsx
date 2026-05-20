@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "studio mng. — Design Company",
+  title: "studio mng.",
   description:
     "온·오프라인을 넘나들며 창의적인 디자인을 구현하는 디자인 컴퍼니",
 };
