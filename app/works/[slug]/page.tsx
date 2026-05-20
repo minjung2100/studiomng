@@ -63,16 +63,16 @@ export default async function WorkPage({
 
         {/* Sticky yellow band — direct child of main so it sticks the full page */}
         <div className="sticky top-24 z-30 bg-[#E5F200] mb-12">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between px-8 md:px-16 py-6 md:py-8 gap-3 md:gap-8">
+          <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between px-8 md:px-16 py-6 md:py-8 gap-3 md:gap-8">
             <h1 className="text-2xl md:text-5xl font-black leading-tight text-black">
               {work.title}
             </h1>
-            <div className="flex flex-col md:items-end gap-1 md:text-right md:shrink-0">
-              <p className="text-[18px] md:text-[22px] font-bold text-black">{work.client}</p>
+            <div className="flex flex-row items-center gap-3 md:flex-col md:items-end md:gap-1 md:text-right md:shrink-0">
+              <p className="text-[15px] md:text-[22px] font-bold text-black">{work.client}</p>
               <p className="text-[11px] tracking-[0.2em] uppercase text-black/50">
                 {work.category}
               </p>
-              <p className="text-[13px] text-black/60">{work.year}</p>
+              <p className="text-[11px] text-black/60">{work.year}</p>
             </div>
           </div>
         </div>
