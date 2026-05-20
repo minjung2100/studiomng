@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: "studio mng.",
   description:
     "온·오프라인을 넘나들며 창의적인 디자인을 구현하는 디자인 컴퍼니",
+  openGraph: {
+    title: "studio mng.",
+    description: "온·오프라인을 넘나들며 창의적인 디자인을 구현하는 디자인 컴퍼니",
+    url: "https://studiomng.com",
+    siteName: "studio mng.",
+    images: [
+      {
+        url: "https://studiomng.com/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
