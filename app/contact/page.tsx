@@ -6,7 +6,7 @@ export default function ContactPage() {
       <Nav />
       <section className="relative min-h-screen bg-white flex flex-col overflow-hidden">
         {/* flex-1 div — identical structure to Hero */}
-        <div className="relative z-10 px-8 md:px-16 flex-1 flex items-center">
+        <div className="relative z-10 px-8 md:px-16 flex-none h-[65vh] flex items-center md:flex-1 md:h-auto">
           <div className="absolute -left-40 top-1/2 -translate-y-1/2 w-[65vw] h-[65vw] max-w-[750px] max-h-[750px] bg-[#E5F200] rounded-full -z-10" />
           <h1 className="text-[18vw] md:text-[13vw] font-black leading-[0.85] uppercase text-black">
             studio
@@ -16,7 +16,7 @@ export default function ContactPage() {
         </div>
 
         {/* Contact info — in-flow below on mobile, absolute right on desktop */}
-        <div className="relative z-10 px-8 pb-[22vh] md:pb-0 text-right md:absolute md:right-16 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-6 md:gap-8">
+        <div className="relative z-10 px-8 pb-12 md:pb-0 text-right md:absolute md:right-16 md:top-1/2 md:-translate-y-1/2 flex flex-col gap-6 md:gap-8">
           <a
             href="mailto:STUDIOMNG@NAVER.COM"
             className="text-[5vw] md:text-[2.8vw] font-black uppercase text-black leading-none hover:text-[#E5F200] transition-colors"
