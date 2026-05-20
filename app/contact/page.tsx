@@ -14,7 +14,7 @@ export default function ContactPage() {
             mng.
           </h1>
 
-          <div className="flex flex-col gap-6 md:gap-8">
+          <div className="flex flex-col gap-6 md:gap-8 text-right">
             <a
               href="mailto:STUDIOMNG@NAVER.COM"
               className="text-[7vw] md:text-[2.8vw] font-black uppercase text-black leading-none hover:text-[#E5F200] transition-colors"
