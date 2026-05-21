@@ -48,7 +48,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-violet-900",
     description: "성수동 중심에서 선보인 포켓몬 '메타몽 플레이그라운드 & 팝팝 미드나잇' 팝업스토어 프로젝트입니다.\n\nMNG는 캐릭터 IP가 가진 다채로운 매력을 입체적인 공간 언어로 치환하는 데 집중했습니다.\n외부는 메타몽 고유의 시그니처 컬러와 유기적인 실루엣을 과감하게 활용하여, 누구나 자유롭게 머물고 즐길 수 있는 개방형 액티비티 놀이터를 조성했습니다.\n\n반면, 레코드숍 테마로 기획된 내부 공간은 감각적인 네온 조명과 몽환적인 오브제들을 통해 밀도 높은 심야의 음악 공간을 구현했습니다.\n외부의 동적인 에너지와 내부의 감각적인 무드를 극명하게 대조시켜, 방문자에게 반전이 있는 매혹적인 브랜드 경험을 선사합니다.",
-    thumbnail: "/works/metamong-playground/thumb.jpg",
+    thumbnail: "/works/metamong-playground/thumb.webp",
     images: [
       "/works/metamong-playground/01.png",
       "/works/metamong-playground/02.png",
@@ -70,7 +70,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-slate-800",
     description: "글로벌 전자담배 브랜드 Ploom을 위한 이동형 팝업스토어 프로젝트입니다.\n장소와 횟수의 제약 없이 유연하게 대응할 수 있도록 전체 공간을 '모듈형 구조'로 기획·설계하여 이동성과 시공성을 극대화했습니다.\n\n디자인은 '도심 속 오아시스(CITY OASIS)'를 콘셉트로, 지친 현대인들의 무뎌진 감각을 깨우는 독립적인 휴식 공간을 지향합니다.\n외부 가벽에 적용한 반투명 폴리카보네이트는 빌딩 숲 사이에 피어난 신기루 같은 몽환적인 실루엣을 자아내며 호기심을 자극합니다.\n반면, 내부 공간은 미래지향적인 금속 소재를 과감하게 활용하여 Ploom의 정교한 제품 아이덴티티를 시각적으로 연상시킵니다.",
-    thumbnail: "/works/ploom-mobile-popup/thumb.jpg",
+    thumbnail: "/works/ploom-mobile-popup/thumb.webp",
     images: [
       "/works/ploom-mobile-popup/01.png",
       "/works/ploom-mobile-popup/02.png",
@@ -90,7 +90,7 @@ export const works: Work[] = [
     scope: "행사디자인",
     bg: "bg-red-900",
     description: "프리미엄 맥주 브랜드 스텔라 아르투아(Stella Artois)의 '퍼펙트 서브 어워즈' 프로젝트입니다.\n\n브랜드의 정통성을 현대적으로 재해석하여, 전문적인 어워즈의 기능성과 감각적인 브랜드 경험을 동시에 충족시키는 공간 연출을 설계했습니다.\n전문 서빙 시연을 위한 메인 바 카운터를 중심으로 심사위원석, 관람객석, 케이터링 존을 유기적으로 연결하여 행사 운영의 효율성과 방문객의 몰입감을 극대화했습니다.\n\n특히 무대 중심에는 스텔라의 상징적인 전용잔 '챌리스(Chalice)'의 실루엣을 대담한 스케일의 대형 브랜딩 월로 구현하여, 공간 전체에 압도적인 브랜드 정체성과 시각적 중심점을 완성했습니다.",
-    thumbnail: "/works/stella-artois-perfect-serve/thumb.jpg",
+    thumbnail: "/works/stella-artois-perfect-serve/thumb.webp",
     images: [
       "/works/stella-artois-perfect-serve/01.png",
       "/works/stella-artois-perfect-serve/02.png",
@@ -108,7 +108,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-green-900",
     description: "올리브영 트렌드팟 홍대점과 N성수점에서 동시 전개된 '2025 올리브영 어워즈' 팝업스토어 공간 기획 및 VMD 프로젝트입니다.\n\n한 해의 뷰티 트렌드를 결산하는 어워즈의 성과를 '산타의 오피스'라는 위트 있는 공간 서사로 재해석했습니다.\n올리브영이 엄선한 어워즈 수상작들을 산타가 정성스럽게 큐레이션한 선물로 연출하여, 방문객에게 단순한 제품 탐색을 넘어 연말의 설렘을 공유하는 몰입형 경험을 선사합니다.\n\n크리스마스의 클래식한 감성을 자극하는 딥그린과 레드의 밀도 높은 컬러링을 바탕으로, 우체국을 연상시키는 아날로그한 집기 형태와 빈티지한 무드를 결합해 컨셉의 완성도를 극대화했습니다.",
-    thumbnail: "/works/olive-young-awards-2025/thumb.jpg",
+    thumbnail: "/works/olive-young-awards-2025/thumb.webp",
     images: ["/works/olive-young-awards-2025/hongdae/01.png"],
     sections: [
       {
@@ -147,7 +147,7 @@ export const works: Work[] = [
     scope: "부스디자인",
     bg: "bg-purple-800",
     description: "'컬러 인 뮤직 페스티벌(COLOR IN MUSIC FESTIVAL)' 부스 디자인입니다.\n청각적 자극인 음악을 대담한 컬러 스펙트럼과 그래픽 언어로 변환하여, 방문객이 공간에 들어서는 순간 축제의 한가운데에 서 있는 듯한 몰입감을 설계했습니다.\n메인 파사드부터 내부 동선까지 강렬한 컬러 블로킹을 적용해 페스티벌 특유의 역동적인 에너지를 시각화했습니다.\n\n더불어 레트로한 카세트테이프와 턴테이블 등 음악적 아이콘을 현대적인 집기 형태와 오브제로 위트 있게 재해석하여, 단순한 관람을 넘어 세대를 관통하는 감성적인 즐거움과 강력한 포토제닉 스팟을 동시에 충족시켰습니다.",
-    thumbnail: "/works/color-in-music-festival/thumb.jpg",
+    thumbnail: "/works/color-in-music-festival/thumb.webp",
     images: [
       "/works/color-in-music-festival/01.png",
       "/works/color-in-music-festival/02.png",
@@ -166,8 +166,8 @@ export const works: Work[] = [
     bg: "bg-blue-900",
     description: "반려동물 토탈 케어 브랜드 ㈜아크의 프리미엄 애견 간식 '하루애 28튼튼' 시리즈의 패키지 디자인 및 커머스 상세페이지 기획 프로젝트입니다.\n\n반려견의 구강 건강 증진이라는 기능적 본질에 집중하여, 제품의 메디컬 카테고리를 직관적으로 인지할 수 있도록 차분하고 정돈된 컬러 스펙트럼을 선정하고,\n군더더기 없는 미니멀한 레이아웃을 통해 핵심 기능성 원료와 영양 성분을 명확하게 강조했습니다.\n\n패키지에서 느낀 정갈한 브랜드 아이덴티티가 온라인 구매 경험으로 자연스럽게 이어지도록,\n상세페이지 또한 가독성 높은 그리드와 인포그래픽을 활용해 프리미엄 덴탈 케어 제품군으로서의 가치를 완성도 있게 전달했습니다.",
     thumbnailImages: [
-      "/works/haruae-03/thumb1.jpg",
-      "/works/haruae-03/thumb2.jpg",
+      "/works/haruae-03/thumb1.webp",
+      "/works/haruae-03/thumb2.webp",
     ],
     images: [
       "/works/haruae-03/01.png",
@@ -187,7 +187,7 @@ export const works: Work[] = [
     scope: "패키지 & 상세페이지디자인",
     bg: "bg-cyan-900",
     description: "반려동물 토탈 케어 브랜드 ㈜아크의 덴탈츄 간식 '하루애 치카' 시리즈의 패키지 디자인 및 커머스 상세페이지 기획 프로젝트입니다.\n\n구강 기능성 제품 특유의 청량하고 정갈한 아이덴티티를 구축하는 데 집중했습니다.\n제품이 가진 3가지 맛과 핵심 원료의 특성이 시각적으로 직관적이되 유기적으로 연결될 수 있도록 생동감 있는 컬러 스펙트럼과 간결한 그래픽 모티브를 활용해 패키지의 라인업 시스템을 완성했습니다.\n\n온라인 상세페이지 역시 덴탈 케어 제품군에 걸맞은 상큼하고 프레시한 톤앤매너를 일관되게 전개했습니다.\n감각적인 비주얼 큐레이션과 정돈된 타이포그래피를 통해 제품의 기능성을 효과적으로 소구하며 프리미엄 덴탈츄로서의 브랜드 가치를 극대화했습니다.",
-    thumbnail: "/works/haruae-02/thumb.jpg",
+    thumbnail: "/works/haruae-02/thumb.webp",
     thumbnailFit: "contain",
     images: [],
     fullWidthImages: [
@@ -205,7 +205,7 @@ export const works: Work[] = [
     scope: "패키지 & 상세페이지디자인",
     bg: "bg-amber-900",
     description: "반려동물 토탈 케어 브랜드 ㈜아크의 프리미엄 애견 간식 '하루애 육포' 시리즈의 패키지 디자인 및 커머스 상세페이지 기획 프로젝트입니다.\n\n글로벌 시장으로의 확장을 준비하는 브랜드의 비전에 맞춰, 한국 고유의 전통 헤리티지를 모던한 디자인 언어로 시각화하는 데 집중했습니다.\n오리고기, 닭고기 등 신선한 원료적 특성이 직관적으로 드러나도록 감각적인 삼색 컬러 시스템을 정립하는 동시에, 패키지 전반에 은은한 한지의 질감을 적용하여 차별화된 한국적 이미지를 표출했습니다.\n특히 소비자가 언제든 부담 없이 선택할 수 있는 간식으로 다가가기 위해, 신선한 원료가 주는 신뢰감과 합리적인 가격대의 포지셔닝이 시각적으로 조화를 이루는 접근성 높은 패키지 레이아웃을 설계했습니다.\n디지털 커머스 환경에서도 이러한 온·오프라인의 영리한 비주얼 전략이 고스란히 이어지도록 가독성 높은 그리드를 구축하여, K-반려식품으로서의 독보적인 경쟁력을 완성했습니다.",
-    thumbnail: "/works/haruae-01/thumb.jpg",
+    thumbnail: "/works/haruae-01/thumb.webp",
     thumbnailFit: "contain",
     images: [],
     fullWidthImages: [
@@ -223,7 +223,7 @@ export const works: Work[] = [
     scope: "상세페이지디자인",
     bg: "bg-teal-900",
     description: "반려동물 웰니스 브랜드 '힐링펫푸드'의 기능성 영양제 3종 및 의약외품 3종 토탈 상세페이지 기획·디자인 프로젝트입니다.\n\n제품의 목적과 소비자의 사용 환경을 고려하여 각 카테고리별로 최적화된 비주얼 전략을 이원화하여 전개했습니다.\n매일의 건강을 책임지는 '영양제' 라인은 정갈한 레이아웃과 직관적인 인포그래픽을 바탕으로 메디컬 서사에 걸맞은 신뢰감 높은 컬러 웨이를 구축해 제품의 전문성을 강조했습니다.\n\n반면, 일상에 밀착된 케어를 제공하는 '의약외품' 라인은 실생활에서의 자연스러운 사용을 중심으로 부드럽고 따뜻한 톤앤매너를 적용했습니다.\n이를 통해 반려동물과 보호자 모두에게 정서적 편안함을 주는 감성적 디자인을 설계하여 브랜드가 지향하는 든든한 일상의 케어를 완성도 높게 시각화했습니다.",
-    thumbnail: "/works/healingpetfood-supplement/thumb.jpg",
+    thumbnail: "/works/healingpetfood-supplement/thumb.webp",
     thumbnailFit: "contain",
     images: [],
     galleryGroups: [
@@ -286,7 +286,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-emerald-900",
     description: "롯데호텔 제주에서 전개된 '포켓몬 스테이 IN JEJU' 콘셉트룸 및 복도 공간 디자인 프로젝트입니다.\n\n진입 동선인 복도는 '세레비의 모험 : 시간 정원'을 주제로 전개됩니다.\n시간 여행 중 제주의 경이로운 자연에 매료된 세레비가 이곳에 영원한 조화와 흐름을 품은 '시간 정원(TIME GARDEN)'을 지었다는 서사를 바탕으로, 신비롭고 몽환적인 자연의 무드를 시각화했습니다.\n\n이 정원을 안정적으로 수호하기 위해 세레비는 특별한 능력을 지닌 포켓몬들에게 협력을 요청합니다. 그렇게 완성된 각 객실은 피카츄와 메타몽 등 정원의 영역을 담당하는 포켓몬들의 고유한 아이덴티티를 모던하게 재해석한 인테리어로 채워졌습니다.\n복도의 신비로운 내러티브가 객실 내부의 가구, 조명, 아트월과 유기적으로 연결되며 투숙객에게 완벽한 몰입형 휴식 경험을 선사합니다.",
-    thumbnail: "/works/pokemon-stay-jeju/thumb.jpg",
+    thumbnail: "/works/pokemon-stay-jeju/thumb.webp",
     images: [
       "/works/pokemon-stay-jeju/01.png",
       "/works/pokemon-stay-jeju/02.png",
@@ -312,7 +312,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-zinc-700",
     description: "화성시문화재단과 함께 성수동에서 전개한 신진 시각 예술가 발굴 및 상생 캠페인 'ART티끌 : 성수저널 VOL.1' 팝업 전시 프로젝트입니다.\n\n화성시의 잠재력 있는 아티스트 8인의 성장을 돕고, 대중과 예술을 매개로 능동적으로 교감할 수 있는 참여형 플랫폼 공간을 기획했습니다.\n모듈형 구조를 사용해 각 작가의 독립된 전시 섹션을 명확하게 구분하고, 한정된 공간 안에서 관람객의 이동 동선이 유기적으로 흐르도록 설계했습니다.\n\n본 전시는 '아트 매거진'이라는 독창적인 콘셉트를 바탕으로, 모듈화된 각 섹션의 작품들이 모여 하나의 컬렉팅 북(Collecting Book)을 완성하는 구조적 형태로 전개됩니다.\n관람객은 공간을 탐색하며 마음에 드는 낱장의 페이지를 수집하고, 자신만의 독창적인 컬렉션을 빌드해 나가는 특별한 예술적 여정을 경험하게 됩니다.",
-    thumbnail: "/works/art-tikkle-vol1/thumb.jpg",
+    thumbnail: "/works/art-tikkle-vol1/thumb.webp",
     images: [
       "/works/art-tikkle-vol1/01.png",
       "/works/art-tikkle-vol1/02.jpg",
@@ -332,7 +332,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-blue-800",
     description: "이천시립박물관에서 전개된 2024 기업열전전, 오비맥주 연대기 전시 프로젝트입니다.\n\n이천시가 가진 역사적 장소성과 오비맥주의 브랜드 자산을 연결하여, 지역의 이미지 가치를 재발견하고 브랜드의 차별성을 각인시키는 아카이브 공간을 설계했습니다.\n맥주의 가장 본질적인 원료인 '이천 물(水)'의 전통성과 우수성을 오비맥주 고유의 청량한 시각 언어로 치환하여 공간 전체를 관통하는 핵심 내러티브로 삼았습니다.\n\n박물관의 고즈넉한 톤앤매너를 유지하면서도, 오비맥주의 연대기를 한눈에 볼 수 있는 현대적인 타임라인 월과 관람객이 직접 사진을 찍고 커스텀 굿즈를 제작할 수 있는 참여형 체험존을 유기적으로 배치했습니다.\n이를 통해 전통과 현대, 지역과 기업이 예술적으로 상생하고 소통하는 감각적인 문화 경험의 장을 완성했습니다.",
-    thumbnail: "/works/ob-beer-chronicle/thumb.jpg",
+    thumbnail: "/works/ob-beer-chronicle/thumb.webp",
     images: [
       "/works/ob-beer-chronicle/01.png",
       "/works/ob-beer-chronicle/02.JPG",
@@ -353,7 +353,7 @@ export const works: Work[] = [
     scope: "집기디자인",
     bg: "bg-neutral-800",
     description: "글로벌 전자담배 브랜드 플룸의 한국 시장 재출시를 위한 이동형 팝업 전시 집기 및 소도구 디자인 프로젝트입니다.\n\n브랜드 고유의 부드러운 곡선과 미니멀한 실루엣을 디자인 언어로 채택하여, 낯선 브랜드를 소비자의 기억 속에 강력하고 우아하게 각인시키는 임팩트 있는 시각 시스템을 구축했습니다.\n상단 디스플레이 공간은 로고 모티브를 입체적으로 활용해 브랜드 아이덴티티를 명확히 선언하고, 하단의 컬러 세그먼트는 담배의 다채로운 맛의 포트폴리오를 대변합니다.\n\n특히 각기 다른 컬러와 섬세한 질감의 변주를 통해 청량함, 부드러움 등 추상적인 맛의 감각을 직관적인 시각 정보로 치환했습니다.\n이에 더해 공간의 완성도를 극대화하기 위해 전시에 필요한 전용 소도구들까지 맞춤형으로 기획·제작하여 디테일한 비주얼 통일성을 부여했습니다.\n이로써 어느 공간에서든 플룸만의 차별화된 브랜드 경험과 프리미엄 가치를 밀도 있게 전달합니다.",
-    thumbnail: "/works/ploom-popup-fixture/thumb.jpg",
+    thumbnail: "/works/ploom-popup-fixture/thumb.webp",
     images: [
       "/works/ploom-popup-fixture/03.png",
       "/works/ploom-popup-fixture/04.png",
@@ -374,7 +374,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-sky-900",
     description: "여의도 IFC몰 LC3 노스 아트리움에서 이루어진 모던 클래식 스카치 위스키 브랜드 발렌타인(Ballantine's)의 싱글몰트 글렌버기 팝업스토어 '아워 라운지(Our Lounge)' 공간 기획 및 VMD 프로젝트입니다.\n\n시간에 따라 깊이와 가치가 달라지는 위스키의 본질에서 착안하여, '시간의 흐름에 따라 무르익는 인간관계'를 공간 전반의 핵심 내러티브로 설계했습니다.\n단순히 제품을 시음하는 일방향적 팝업을 넘어, 함께 방문한 이들이 서로를 더 깊이 알아가고 교감할 수 있는 프리미엄 라운지 형태의 경험적 공간을 제시했습니다.\n\n웅장한 네이비와 골드, 묵직한 우드 텍스처를 활용해 발렌타인의 독보적인 헤리티지를 감각적으로 시각화하는 동시에, 서로의 궁합을 확인하는 카드게임 존, 질문을 던지는 주사위 토크 존, 함께 완성하는 퍼즐 이벤트 스팟 등 다채로운 소비자 참여형 콘텐츠를 유기적으로 배치했습니다.\n이를 통해 클래식한 브랜드의 가치를 트렌디한 공간 언어로 완벽하게 재정의했습니다.",
-    thumbnail: "/works/ballantines-hour-lounge/thumb.jpg",
+    thumbnail: "/works/ballantines-hour-lounge/thumb.webp",
     images: [
       "/works/ballantines-hour-lounge/240829_Ballantine's_IFC MALL_0031.jpg",
       "/works/ballantines-hour-lounge/240829_Ballantine's_IFC MALL_0033.jpg",
@@ -399,7 +399,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-orange-900",
     description: "프리미엄 주방 가전 브랜드 브레빌과 29CM의 감도 깊은 큐레이션 쇼룸 '이구성수'가 함께 전개한 '브레빌 앳 홈(Breville at Home)' 팝업스토어 프로젝트입니다.\n\n가전을 단순한 기능적 도구를 넘어 하나의 라이프스타일 오브제로 바라보았습니다.\n'집'이라는 가장 사적이고 편안한 프레임을 성수동의 트렌디한 쇼룸 내에 구축하고 주방, 서재, 거실, 테라스 등 일상의 다채로운 모습을 감각적으로 연출했습니다.\n공간 곳곳에 자연스럽게 스며든 브레빌 제품들을 통해 방문객이 브랜드가 지향하는 프리미엄 라이프스타일을 오감으로 경험하고 향유하도록 설계했습니다.\n\n따뜻한 우드 텍스처와 미니멀한 가구 배치, 싱그러운 플랜테리어 요소를 유기적으로 레이어링하여 아늑하면서도 격조 있는 주거 무드를 완성했습니다.\n이로써 제품 중심의 일방향적 전시를 탈피하고, 공간 속 서사에 스며들어 브레빌과 함께하는 일상의 가치를 직관적으로 체감하게 하는 몰입형 쇼룸을 완성했습니다.",
-    thumbnail: "/works/breville-29cm/thumb.jpg",
+    thumbnail: "/works/breville-29cm/thumb.webp",
     images: [
       "/works/breville-29cm/02.jpg",
       "/works/breville-29cm/04.jpg",
@@ -422,7 +422,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-pink-900",
     description: "패션 편집숍 원더플레이스와 힙합 아티스트 릴체리의 협업 굿즈 런칭을 위한 콜라보레이션 팝업스토어 프로젝트입니다.\n\n아티스트 특유의 자유분방하고 독창적인 서브컬처 이미지를 날것의 공간 언어로 시각화하는 데 집중했습니다.\n언더그라운드 클럽의 화장실에서 착안한 거친 질감과 과감한 그라피티 텍스트, 그리고 몽환적인 네온 핑크 라이팅을 매칭하여 정형화되지 않은 대담한 파사드를 구축했습니다.\n\n공간 내부에는 아티스트의 협업 컬렉션을 감각적으로 큐레이션한 VMD존과 함께, 구매 고객에게 현장에서 즉각적인 커스텀 경험을 제공하는 '각인 서비스(Engraving Station)' 존을 배치하였습니다.\n정돈되지 않은 무드의 시각적 강렬함 속에서도 커머스 플랫폼으로서의 기능과 인터랙티브한 참여 요소를 결합한 밀도 높은 경험 중심의 공간을 완성했습니다.",
-    thumbnail: "/works/wonderplace-lilcherry/thumb.jpg",
+    thumbnail: "/works/wonderplace-lilcherry/thumb.webp",
     images: [
       "/works/wonderplace-lilcherry/01.png",
       "/works/wonderplace-lilcherry/03.png",
@@ -441,7 +441,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-yellow-900",
     description: "부산 광안리의 대표적인 복합문화공간 밀락더마켓에서 전개된 카스와 한맥의 팝업스토어 프로젝트입니다.\n\n카스 레몬스퀴즈 존은 시그니처 블루와 레몬 옐로우의 과감한 컬러 블로킹으로 청량하고 팝한 에너지를 전개한 반면, 한맥 존은 딥그린과 골드 라이팅의 매칭을 통해 엑스트라 크리미 라거의 부드럽고 진중한 무드를 시각화했습니다.\n\n두 존이 만나는 중앙에 방문객의 시선을 사로잡고 소셜 미디어 바이럴을 극대화할 수 있는 브랜드 프로덕트 조형물을 설치하여 강력한 포토제닉 스팟을 구축했습니다.\n트렌디한 로컬 랜드마크의 장소성을 극대화하며, 오프라인 공간이 줄 수 있는 가장 화사하고 다이내믹한 컬러 플레이의 정수를 보여주는 경험 중심의 공간을 완성했습니다.",
-    thumbnail: "/works/cass-hanmac/thumb.jpg",
+    thumbnail: "/works/cass-hanmac/thumb.webp",
     images: [
       "/works/cass-hanmac/02.jpg",
       "/works/cass-hanmac/04.jpg",
@@ -461,7 +461,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-blue-950",
     description: "올림픽 데이런 행사장에서 전개된 오피셜 파트너 카스의 올림픽 테마 브랜드 부스 공간 디자인 및 제작 프로젝트입니다.\n\n올림픽을 향한 전 국민의 열정과 에너지를 시각화하기 위해, 개최지인 파리의 상징적인 랜드마크들을 카스 고유의 다이내믹한 브랜드 언어로 재해석했습니다.\n데이런 참가자들이 열정의 순간을 기록할 수 있도록 거대한 개선문을 모티브로 한 입체적인 포토존을 전면에 배치하여 야외 페스티벌 특유의 축제 아우라를 형성했습니다.\n\n내부에는 에펠탑의 구조미를 녹여낸 미니 게임존을 설계하고, 올림픽 육상 경기에서 착안한 제자리 높이뛰기 콘텐츠를 운영하여 참가자들의 자발적인 참여와 몰입을 이끌어냈습니다.\n카스의 아이코닉한 블루 컬러웨이와 올림픽 서사를 융합하여, 브랜드가 지향하는 젊음과 도전의 가치를 공감각적으로 각인시킨 아웃도어 프로젝트입니다.",
-    thumbnail: "/works/cass-olympic-day-run/thumb.jpg",
+    thumbnail: "/works/cass-olympic-day-run/thumb.webp",
     images: [
       "/works/cass-olympic-day-run/02.jpg",
       "/works/cass-olympic-day-run/04.jpg",
@@ -480,7 +480,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-sky-800",
     description: "카스 라이트와 라이프스타일 플랫폼 GS25의 협업으로 탄생한 팝업스토어 프로젝트입니다.\n\n'RIGHT LIGHT BAR'라는 메인 테마 아래, 시간의 흐름에 따라 공간의 페르소나가 완전히 전환되는 가변적 프레임워크를 설계했습니다.\n낮에는 편의점 특유의 익숙함을 비틀어 이색적인 경험을 선사하는 화사한 마켓의 형태로 운영되며, 밤이 되면 조명과 무드를 반전시켜 감각적인 바의 모습으로 탈바꿈하는 입체적인 내러티브를 구축했습니다.\n\n카스 라이트 고유의 팝하고 시원한 시각 정체성을 강화하기 위해 밝고 명쾌한 스카이블루 컬러웨이를 스페이스 베이스로 삼고, 구름을 모티브로 한 초현실적인 오브제와 메탈릭 텍스처, 그리고 네온 플레이를 유기적으로 결합했습니다.\n익숙한 공간 속에서 낯설고 신선한 시각적 즐거움을 선사하며 브랜드의 젊고 청량한 이미지를 완벽하게 재정의했습니다.",
-    thumbnail: "/works/cass-gs-right-light-bar/thumb.jpg",
+    thumbnail: "/works/cass-gs-right-light-bar/thumb.webp",
     images: [
       "/works/cass-gs-right-light-bar/01.png",
       "/works/cass-gs-right-light-bar/03.png",
@@ -502,7 +502,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-rose-900",
     description: "롯데백화점과 포켓몬스터의 협업으로 탄생한 대규모 팝업 프로젝트 'POKEMON TOWN with LOTTE'의 팝업 프로젝트입니다.\n\n롯데백화점 수원점과 부산점이라는 거점 장소성을 고려하여, 각 지역의 역사적·문화적 랜드마크와 포켓몬 IP가 자연스럽게 융합된 이색적인 공간 내러티브를 설계했습니다.\n단순히 제품을 판매하는 스토어를 넘어, 방문객이 마치 포켓몬들과 함께 지역을 여행하는 듯한 몰입형 경험을 선사하는 대규모 타운 프레임워크를 구축했습니다.\n\n공간 곳곳에는 시선을 압도하는 초대형 포켓몬 거대 조형물을 상징적으로 배치하여, 백화점 오가닉 트래픽을 공간 안으로 자연스럽게 유입시키는 강력한 랜드마크를 구현했습니다.\n이를 통해 전 세대를 아우르는 자발적인 바이럴과 소셜 미디어 확산을 극대화하며, 도심 속 특별한 문화 경험의 장을 성공적으로 완성했습니다.",
-    thumbnail: "/works/pokemon-town-lotte/thumb.jpg",
+    thumbnail: "/works/pokemon-town-lotte/thumb.webp",
     images: [
       "/works/pokemon-town-lotte/02.jpg",
       "/works/pokemon-town-lotte/04.jpg",
@@ -527,7 +527,7 @@ export const works: Work[] = [
     scope: "공간디자인",
     bg: "bg-indigo-900",
     description: "하이브 산하 레이블 아티스트들의 컴백 및 신보 프로모션을 위해 신세계백화점 강남점에서 전개된 릴레이 팝업스토어 프로젝트입니다.\n\n아일릿, 투모로우바이투게더, 보이넥스트도어, 세븐틴 등 글로벌 아티스트들의 독창적인 앨범 세계관이 하나의 메인 플랫폼 내에서 유기적으로 전환될 수 있도록 가변성 중심의 공간 프레임워크를 설계했습니다.\n\n각 아티스트의 컴백 턴에 맞춰 앨범의 무드와 비주얼 콘셉트를 반영한 그래픽 스킨 변경 및 공간 리스타일링을 정교하게 실행했습니다.\n팬덤의 니즈를 깊이 있게 충족시키는 아티스트 맞춤형 현장 인터랙티브 프로그램과 고감도 VMD 연출을 유기적으로 결합하여, 단순한 굿즈 판매를 넘어 팬과 아티스트가 공간을 통해 교감하는 깊이 있는 몰입형 브랜드 경험을 완성했습니다.",
-    thumbnail: "/works/hybe-labels-popup/thumb.jpg",
+    thumbnail: "/works/hybe-labels-popup/thumb.webp",
     images: [
       "/works/hybe-labels-popup/01.jpg",
       "/works/hybe-labels-popup/03.jpg",
@@ -559,7 +559,7 @@ export const works: Work[] = [
     scope: "집기디자인",
     bg: "bg-lime-900",
     description: "글로벌 주류 행사 및 프로모션을 위해 기획된 '월드 오브 데킬라(World of Tequila)'의 이동식 팝업 시안입니다.\n\n다양한 공간과 팝업 환경에 유연하게 대응할 수 있도록 이동성과 시공 편의성을 극대화한 모듈러 형식의 집기 시스템을 설계했습니다.\n데킬라 브랜드 고유의 이국적이고 프리미엄한 아이덴티티를 시크한 블랙 프레임과 메탈릭 골드의 시각 언어로 치환하여, 어떤 공간에서든 즉각적으로 몰입도 높은 브랜드 플랫폼이 구축되도록 기획했습니다.\n\n집기 라인업은 공간의 기능에 맞춰 체계적으로 세분화했습니다.\n제품의 라인업을 정갈하게 보여주는 메인 선반 집기를 중심으로, 아가베 모티브를 더해 시선을 사로잡는 주력 상품 포인트 집기, 방문객의 자발적인 SNS 바이럴을 유도하는 감각적인 거울 포토존 집기, 그리고 공간의 가이드를 잡아주는 스탠딩 사인까지 하나의 유기적인 패키지로 구성하여 완성도 높은 인스토어 VMD 솔루션을 완성했습니다.",
-    thumbnail: "/works/world-of-tequila/thumb.jpg",
+    thumbnail: "/works/world-of-tequila/thumb.webp",
     thumbnailFit: "contain",
     images: [],
     fullWidthImages: [
