@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { CATEGORIES, works, type Category } from "@/lib/works-data";
 
@@ -77,16 +78,18 @@ export default function Works() {
                 {work.thumbnailImages ? (
                   <div className="absolute inset-0 flex">
                     {work.thumbnailImages.map((src, i) => (
-                      /* eslint-disable-next-line @next/next/no-img-element */
-                      <img key={i} src={src} alt={`${work.title} ${i + 1}`} className="w-1/2 h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <div key={i} className="relative w-1/2 h-full">
+                        <Image src={src} alt={`${work.title} ${i + 1}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 17vw" />
+                      </div>
                     ))}
                   </div>
                 ) : (work.thumbnail ?? work.images[0]) ? (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img
-                    src={work.thumbnail ?? work.images[0]}
+                  <Image
+                    src={work.thumbnail ?? work.images[0]!}
                     alt={work.title}
-                    className={`absolute inset-0 w-full h-full ${work.thumbnailFit === "contain" ? "object-contain" : "object-cover group-hover:scale-105 transition-transform duration-500"}`}
+                    fill
+                    className={work.thumbnailFit === "contain" ? "object-contain" : "object-cover group-hover:scale-105 transition-transform duration-500"}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 ) : (
                   <>
