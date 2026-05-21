@@ -16,3 +16,8 @@ body {
   background: #ffffff;
   color: #0a0a0a;
 }
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}

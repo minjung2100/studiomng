@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import ImageProtect from "@/components/ImageProtect";
 
 const geist = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={geist.variable}>
-      <body>{children}</body>
+      <body>
+        <ImageProtect />
+        {children}
+      </body>
     </html>
   );
 }
