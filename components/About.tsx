@@ -3,9 +3,9 @@ export default function About() {
     <>
       <section
         id="about"
-        className="relative min-h-screen bg-white flex flex-col overflow-hidden"
+        className="relative min-h-screen bg-white flex flex-col md:flex-row overflow-hidden"
       >
-        {/* flex-1 div — identical structure to Hero */}
+        {/* Left — big headline */}
         <div className="relative z-10 px-8 md:px-16 flex-none h-[65vh] flex items-center md:flex-1 md:h-auto">
           <div className="absolute -left-[26vw] md:-left-40 top-1/2 -translate-y-1/2 w-[65vw] h-[65vw] max-w-[750px] max-h-[750px] bg-[#E5F200] rounded-full -z-10" />
           <h1 className="text-[18vw] md:text-[13vw] font-black leading-[0.85] uppercase text-black">
@@ -15,8 +15,8 @@ export default function About() {
           </h1>
         </div>
 
-        {/* Text — in-flow below on mobile, absolute right on desktop */}
-        <div className="relative z-10 px-8 pb-16 md:pb-0 md:absolute md:right-16 md:top-1/2 md:-translate-y-1/2 md:max-w-[45vw]">
+        {/* Right — description text */}
+        <div className="relative z-10 px-8 pb-16 md:pb-0 md:pr-16 md:max-w-[45vw] md:self-center">
           <p className="text-[18px] md:text-[25px] font-black text-black leading-snug mb-6 md:mb-8">
             경계를 허물고,<br />
             디자인의 새로운 영역을 만들어갑니다.
