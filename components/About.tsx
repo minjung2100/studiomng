@@ -16,7 +16,7 @@ export default function About() {
         </div>
 
         {/* Right — description text */}
-        <div className="relative z-10 px-8 pb-16 md:pb-0 md:pr-16 md:max-w-[45vw] md:self-center">
+        <div className="relative z-10 px-8 pb-16 md:pb-0 md:pr-16 md:w-[45vw] md:flex-shrink-0 md:self-center">
           <p className="text-[18px] md:text-[25px] font-black text-black leading-snug mb-6 md:mb-8">
             경계를 허물고,<br />
             디자인의 새로운 영역을 만들어갑니다.
