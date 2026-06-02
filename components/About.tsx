@@ -21,12 +21,12 @@ export default function About() {
             경계를 허물고,<br />
             디자인의 새로운 영역을 만들어갑니다.
           </p>
-          <p className="text-[14px] md:text-[25px] text-black leading-relaxed mb-4 md:mb-0">
+          <p className="text-[14px] md:text-[18px] text-black leading-relaxed mb-4 md:mb-0">
             studio mng는 브랜드의 선명한 아이덴티티 수립부터<br />
             머무는 공간의 입체적인 경험까지,<br />
             경계 없는 크리에이티브를 지향하는 디자인 스튜디오입니다.
           </p>
-          <p className="text-[14px] md:text-[25px] text-black leading-relaxed">
+          <p className="text-[14px] md:text-[18px] text-black leading-relaxed">
             정형화된 틀에서 벗어나 형태를 짓고 시선을 디렉팅하며,<br />
             정적인 환경 안에 잊지 못할 서사를 불어넣습니다.<br />
             우리는 대담한 시각적 언어로 소비자의 일상에 신선한 영감을 선사하고,<br />
