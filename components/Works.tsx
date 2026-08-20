@@ -3,11 +3,21 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CATEGORIES, works, type Category } from "@/lib/works-data";
+import {
+  works,
+  type Category,
+  SECTIONS,
+  SECTION_LABELS,
+  type Section,
+  getCategoriesForSection,
+  getSectionForCategory,
+} from "@/lib/works-data";
 
 export default function Works() {
+  const [section, setSection] = useState<Section>("OFFLINE");
   const [active, setActive] = useState<Category>("ALL");
   const headingRef = useRef<HTMLHeadingElement>(null);
+  const categories = getCategoriesForSection(section);
 
   useEffect(() => {
     const fit = () => {
@@ -31,8 +41,16 @@ export default function Works() {
     return () => window.removeEventListener("resize", fit);
   }, []);
 
+  const bySection = works
+    .filter((w) => !w.hidden)
+    .filter((w) => getSectionForCategory(w.category) === section);
   const filtered =
-    active === "ALL" ? works : works.filter((w) => w.category === active);
+    active === "ALL" ? bySection : bySection.filter((w) => w.category === active);
+
+  const handleSectionChange = (next: Section) => {
+    setSection(next);
+    setActive("ALL");
+  };
 
   return (
     <section id="works" className="bg-white pt-24 pb-28">
@@ -52,9 +70,26 @@ export default function Works() {
           </p>
         </div>
 
+        {/* Section tabs */}
+        <div className="flex gap-2 mb-6">
+          {SECTIONS.map((sec) => (
+            <button
+              key={sec}
+              onClick={() => handleSectionChange(sec)}
+              className={`px-6 py-2.5 text-sm font-bold tracking-[0.1em] uppercase border-b-2 transition-colors cursor-pointer ${
+                section === sec
+                  ? "border-black text-black"
+                  : "border-transparent text-gray-400 hover:text-black"
+              }`}
+            >
+              {SECTION_LABELS[sec]}
+            </button>
+          ))}
+        </div>
+
         {/* Filter */}
         <div className="flex flex-wrap gap-2 mb-14">
-          {CATEGORIES.map((cat) => (
+          {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActive(cat)}

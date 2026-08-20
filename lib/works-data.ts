@@ -10,6 +10,28 @@ export const CATEGORIES = [
 
 export type Category = (typeof CATEGORIES)[number];
 
+export const SECTIONS = ["OFFLINE", "ONLINE"] as const;
+
+export type Section = (typeof SECTIONS)[number];
+
+export const SECTION_LABELS: Record<Section, string> = {
+  OFFLINE: "오프라인",
+  ONLINE: "온라인",
+};
+
+const SECTION_CATEGORIES: Record<Section, readonly Exclude<Category, "ALL">[]> = {
+  OFFLINE: ["POPUP STORE", "EVENT", "FESTIVAL", "VMD"],
+  ONLINE: ["PACKAGE", "WEB PAGE"],
+};
+
+export function getCategoriesForSection(section: Section): Category[] {
+  return ["ALL", ...SECTION_CATEGORIES[section]];
+}
+
+export function getSectionForCategory(category: Exclude<Category, "ALL">): Section {
+  return SECTION_CATEGORIES.OFFLINE.includes(category) ? "OFFLINE" : "ONLINE";
+}
+
 export type WorkSection = {
   label: string;
   images: string[];
@@ -25,6 +47,7 @@ export type Work = {
   scope: string;
   bg: string;
   description: string;
+  hidden?: boolean;
   thumbnail?: string;
   thumbnailImages?: string[];
   thumbnailFit?: "cover" | "contain";
@@ -39,6 +62,25 @@ export type Work = {
 
 export const works: Work[] = [
   {
+    id: 26,
+    slug: "nutrl-popup",
+    title: "NUTRL POP-UP",
+    client: "오비맥주",
+    year: "2026",
+    category: "POPUP STORE",
+    scope: "공간디자인",
+    bg: "bg-fuchsia-900",
+    description: "오비맥주의 프리미엄 보드카 하이볼 브랜드 '뉴트럴(NÜTRL)'과 함께한 본 프로젝트는, 바쁜 일상에 자연스러운 미소를 채우는 도심 속 웃음 충전소 'SMILE THRU' 콘셉트의 팝업스토어 디자인입니다.\n\n뉴트럴 샘플링과 즉석 미니 프로그램이 진행되는 이 공간은 모듈형 컨테이너 구조로 설계되어 성수동 외에도 다양한 공간으로 이동 및 확장이 가능하도록 유연성을 갖추었습니다.\n시선을 압도하는 대형 캔 모형으로 브랜드 인지도를 극대화하고, 로고가 적용된 차단봉을 대기열 관리와 브랜딩 요소로 동시에 활용하여 실용성과 심미성을 모두 충족시켰습니다.",
+    images: [
+      "/works/nutrl-popup/01.png",
+      "/works/nutrl-popup/02.png",
+      "/works/nutrl-popup/03.png",
+      "/works/nutrl-popup/04.png",
+      "/works/nutrl-popup/05.png",
+      "/works/nutrl-popup/06.png",
+    ],
+  },
+  {
     id: 1,
     slug: "metamong-playground",
     title: "Metamong Playground & Pop-Pop Midnight",
@@ -47,6 +89,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-violet-900",
+    hidden: true,
     description: "성수동 중심에서 선보인 포켓몬 '메타몽 플레이그라운드 & 팝팝 미드나잇' 팝업스토어 프로젝트입니다.\n\nMNG는 캐릭터 IP가 가진 다채로운 매력을 입체적인 공간 언어로 치환하는 데 집중했습니다.\n외부는 메타몽 고유의 시그니처 컬러와 유기적인 실루엣을 과감하게 활용하여, 누구나 자유롭게 머물고 즐길 수 있는 개방형 액티비티 놀이터를 조성했습니다.\n\n반면, 레코드숍 테마로 기획된 내부 공간은 감각적인 네온 조명과 몽환적인 오브제들을 통해 밀도 높은 심야의 음악 공간을 구현했습니다.\n외부의 동적인 에너지와 내부의 감각적인 무드를 극명하게 대조시켜, 방문자에게 반전이 있는 매혹적인 브랜드 경험을 선사합니다.",
     thumbnail: "/works/metamong-playground/thumb.webp",
     images: [
@@ -69,6 +112,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-slate-800",
+    hidden: true,
     description: "글로벌 전자담배 브랜드 Ploom을 위한 이동형 팝업스토어 프로젝트입니다.\n장소와 횟수의 제약 없이 유연하게 대응할 수 있도록 전체 공간을 '모듈형 구조'로 기획·설계하여 이동성과 시공성을 극대화했습니다.\n\n디자인은 '도심 속 오아시스(CITY OASIS)'를 콘셉트로, 지친 현대인들의 무뎌진 감각을 깨우는 독립적인 휴식 공간을 지향합니다.\n외부 가벽에 적용한 반투명 폴리카보네이트는 빌딩 숲 사이에 피어난 신기루 같은 몽환적인 실루엣을 자아내며 호기심을 자극합니다.\n반면, 내부 공간은 미래지향적인 금속 소재를 과감하게 활용하여 Ploom의 정교한 제품 아이덴티티를 시각적으로 연상시킵니다.",
     thumbnail: "/works/ploom-mobile-popup/thumb.webp",
     images: [
@@ -89,6 +133,7 @@ export const works: Work[] = [
     category: "EVENT",
     scope: "행사디자인",
     bg: "bg-red-900",
+    hidden: true,
     description: "프리미엄 맥주 브랜드 스텔라 아르투아(Stella Artois)의 '퍼펙트 서브 어워즈' 프로젝트입니다.\n\n브랜드의 정통성을 현대적으로 재해석하여, 전문적인 어워즈의 기능성과 감각적인 브랜드 경험을 동시에 충족시키는 공간 연출을 설계했습니다.\n전문 서빙 시연을 위한 메인 바 카운터를 중심으로 심사위원석, 관람객석, 케이터링 존을 유기적으로 연결하여 행사 운영의 효율성과 방문객의 몰입감을 극대화했습니다.\n\n특히 무대 중심에는 스텔라의 상징적인 전용잔 '챌리스(Chalice)'의 실루엣을 대담한 스케일의 대형 브랜딩 월로 구현하여, 공간 전체에 압도적인 브랜드 정체성과 시각적 중심점을 완성했습니다.",
     thumbnail: "/works/stella-artois-perfect-serve/thumb.webp",
     images: [
@@ -146,6 +191,7 @@ export const works: Work[] = [
     category: "FESTIVAL",
     scope: "부스디자인",
     bg: "bg-purple-800",
+    hidden: true,
     description: "'컬러 인 뮤직 페스티벌(COLOR IN MUSIC FESTIVAL)' 부스 디자인입니다.\n청각적 자극인 음악을 대담한 컬러 스펙트럼과 그래픽 언어로 변환하여, 방문객이 공간에 들어서는 순간 축제의 한가운데에 서 있는 듯한 몰입감을 설계했습니다.\n메인 파사드부터 내부 동선까지 강렬한 컬러 블로킹을 적용해 페스티벌 특유의 역동적인 에너지를 시각화했습니다.\n\n더불어 레트로한 카세트테이프와 턴테이블 등 음악적 아이콘을 현대적인 집기 형태와 오브제로 위트 있게 재해석하여, 단순한 관람을 넘어 세대를 관통하는 감성적인 즐거움과 강력한 포토제닉 스팟을 동시에 충족시켰습니다.",
     thumbnail: "/works/color-in-music-festival/thumb.webp",
     images: [
@@ -153,6 +199,29 @@ export const works: Work[] = [
       "/works/color-in-music-festival/02.png",
       "/works/color-in-music-festival/03.png",
       "/works/color-in-music-festival/04.png",
+    ],
+  },
+  {
+    id: 27,
+    slug: "hanul-sansam",
+    title: "한울산삼",
+    client: "셀시어스",
+    year: "2026",
+    category: "WEB PAGE",
+    scope: "상세페이지디자인",
+    bg: "bg-emerald-950",
+    description: "",
+    thumbnail: "/works/hanul-sansam/thumb.webp",
+    thumbnailFit: "contain",
+    images: [
+      "/works/hanul-sansam/01.jpg",
+      "/works/hanul-sansam/02.jpg",
+      "/works/hanul-sansam/03.jpg",
+      "/works/hanul-sansam/04.jpg",
+      "/works/hanul-sansam/05.jpg",
+      "/works/hanul-sansam/06.jpg",
+      "/works/hanul-sansam/07.jpg",
+      "/works/hanul-sansam/08.jpg",
     ],
   },
   {
@@ -285,6 +354,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-emerald-900",
+    hidden: true,
     description: "롯데호텔 제주에서 전개된 '포켓몬 스테이 IN JEJU' 콘셉트룸 및 복도 공간 디자인 프로젝트입니다.\n\n진입 동선인 복도는 '세레비의 모험 : 시간 정원'을 주제로 전개됩니다.\n시간 여행 중 제주의 경이로운 자연에 매료된 세레비가 이곳에 영원한 조화와 흐름을 품은 '시간 정원(TIME GARDEN)'을 지었다는 서사를 바탕으로, 신비롭고 몽환적인 자연의 무드를 시각화했습니다.\n\n이 정원을 안정적으로 수호하기 위해 세레비는 특별한 능력을 지닌 포켓몬들에게 협력을 요청합니다. 그렇게 완성된 각 객실은 피카츄와 메타몽 등 정원의 영역을 담당하는 포켓몬들의 고유한 아이덴티티를 모던하게 재해석한 인테리어로 채워졌습니다.\n복도의 신비로운 내러티브가 객실 내부의 가구, 조명, 아트월과 유기적으로 연결되며 투숙객에게 완벽한 몰입형 휴식 경험을 선사합니다.",
     thumbnail: "/works/pokemon-stay-jeju/thumb.webp",
     images: [
@@ -352,6 +422,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "집기디자인",
     bg: "bg-neutral-800",
+    hidden: true,
     description: "글로벌 전자담배 브랜드 플룸의 한국 시장 재출시를 위한 이동형 팝업 전시 집기 및 소도구 디자인 프로젝트입니다.\n\n브랜드 고유의 부드러운 곡선과 미니멀한 실루엣을 디자인 언어로 채택하여, 낯선 브랜드를 소비자의 기억 속에 강력하고 우아하게 각인시키는 임팩트 있는 시각 시스템을 구축했습니다.\n상단 디스플레이 공간은 로고 모티브를 입체적으로 활용해 브랜드 아이덴티티를 명확히 선언하고, 하단의 컬러 세그먼트는 담배의 다채로운 맛의 포트폴리오를 대변합니다.\n\n특히 각기 다른 컬러와 섬세한 질감의 변주를 통해 청량함, 부드러움 등 추상적인 맛의 감각을 직관적인 시각 정보로 치환했습니다.\n이에 더해 공간의 완성도를 극대화하기 위해 전시에 필요한 전용 소도구들까지 맞춤형으로 기획·제작하여 디테일한 비주얼 통일성을 부여했습니다.\n이로써 어느 공간에서든 플룸만의 차별화된 브랜드 경험과 프리미엄 가치를 밀도 있게 전달합니다.",
     thumbnail: "/works/ploom-popup-fixture/thumb.webp",
     images: [
@@ -421,6 +492,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-pink-900",
+    hidden: true,
     description: "패션 편집숍 원더플레이스와 힙합 아티스트 릴체리의 협업 굿즈 런칭을 위한 콜라보레이션 팝업스토어 프로젝트입니다.\n\n아티스트 특유의 자유분방하고 독창적인 서브컬처 이미지를 날것의 공간 언어로 시각화하는 데 집중했습니다.\n언더그라운드 클럽의 화장실에서 착안한 거친 질감과 과감한 그라피티 텍스트, 그리고 몽환적인 네온 핑크 라이팅을 매칭하여 정형화되지 않은 대담한 파사드를 구축했습니다.\n\n공간 내부에는 아티스트의 협업 컬렉션을 감각적으로 큐레이션한 VMD존과 함께, 구매 고객에게 현장에서 즉각적인 커스텀 경험을 제공하는 '각인 서비스(Engraving Station)' 존을 배치하였습니다.\n정돈되지 않은 무드의 시각적 강렬함 속에서도 커머스 플랫폼으로서의 기능과 인터랙티브한 참여 요소를 결합한 밀도 높은 경험 중심의 공간을 완성했습니다.",
     thumbnail: "/works/wonderplace-lilcherry/thumb.webp",
     images: [
@@ -479,6 +551,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-sky-800",
+    hidden: true,
     description: "카스 라이트와 라이프스타일 플랫폼 GS25의 협업으로 탄생한 팝업스토어 프로젝트입니다.\n\n'RIGHT LIGHT BAR'라는 메인 테마 아래, 시간의 흐름에 따라 공간의 페르소나가 완전히 전환되는 가변적 프레임워크를 설계했습니다.\n낮에는 편의점 특유의 익숙함을 비틀어 이색적인 경험을 선사하는 화사한 마켓의 형태로 운영되며, 밤이 되면 조명과 무드를 반전시켜 감각적인 바의 모습으로 탈바꿈하는 입체적인 내러티브를 구축했습니다.\n\n카스 라이트 고유의 팝하고 시원한 시각 정체성을 강화하기 위해 밝고 명쾌한 스카이블루 컬러웨이를 스페이스 베이스로 삼고, 구름을 모티브로 한 초현실적인 오브제와 메탈릭 텍스처, 그리고 네온 플레이를 유기적으로 결합했습니다.\n익숙한 공간 속에서 낯설고 신선한 시각적 즐거움을 선사하며 브랜드의 젊고 청량한 이미지를 완벽하게 재정의했습니다.",
     thumbnail: "/works/cass-gs-right-light-bar/thumb.webp",
     images: [
@@ -501,6 +574,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "공간디자인",
     bg: "bg-rose-900",
+    hidden: true,
     description: "롯데백화점과 포켓몬스터의 협업으로 탄생한 대규모 팝업 프로젝트 'POKEMON TOWN with LOTTE'의 팝업 프로젝트입니다.\n\n롯데백화점 수원점과 부산점이라는 거점 장소성을 고려하여, 각 지역의 역사적·문화적 랜드마크와 포켓몬 IP가 자연스럽게 융합된 이색적인 공간 내러티브를 설계했습니다.\n단순히 제품을 판매하는 스토어를 넘어, 방문객이 마치 포켓몬들과 함께 지역을 여행하는 듯한 몰입형 경험을 선사하는 대규모 타운 프레임워크를 구축했습니다.\n\n공간 곳곳에는 시선을 압도하는 초대형 포켓몬 거대 조형물을 상징적으로 배치하여, 백화점 오가닉 트래픽을 공간 안으로 자연스럽게 유입시키는 강력한 랜드마크를 구현했습니다.\n이를 통해 전 세대를 아우르는 자발적인 바이럴과 소셜 미디어 확산을 극대화하며, 도심 속 특별한 문화 경험의 장을 성공적으로 완성했습니다.",
     thumbnail: "/works/pokemon-town-lotte/thumb.webp",
     images: [
@@ -558,6 +632,7 @@ export const works: Work[] = [
     category: "POPUP STORE",
     scope: "집기디자인",
     bg: "bg-lime-900",
+    hidden: true,
     description: "글로벌 주류 행사 및 프로모션을 위해 기획된 '월드 오브 데킬라(World of Tequila)'의 이동식 팝업 시안입니다.\n\n다양한 공간과 팝업 환경에 유연하게 대응할 수 있도록 이동성과 시공 편의성을 극대화한 모듈러 형식의 집기 시스템을 설계했습니다.\n데킬라 브랜드 고유의 이국적이고 프리미엄한 아이덴티티를 시크한 블랙 프레임과 메탈릭 골드의 시각 언어로 치환하여, 어떤 공간에서든 즉각적으로 몰입도 높은 브랜드 플랫폼이 구축되도록 기획했습니다.\n\n집기 라인업은 공간의 기능에 맞춰 체계적으로 세분화했습니다.\n제품의 라인업을 정갈하게 보여주는 메인 선반 집기를 중심으로, 아가베 모티브를 더해 시선을 사로잡는 주력 상품 포인트 집기, 방문객의 자발적인 SNS 바이럴을 유도하는 감각적인 거울 포토존 집기, 그리고 공간의 가이드를 잡아주는 스탠딩 사인까지 하나의 유기적인 패키지로 구성하여 완성도 높은 인스토어 VMD 솔루션을 완성했습니다.",
     thumbnail: "/works/world-of-tequila/thumb.webp",
     thumbnailFit: "contain",
