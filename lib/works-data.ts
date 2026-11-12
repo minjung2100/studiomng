@@ -62,6 +62,26 @@ export type Work = {
 
 export const works: Work[] = [
   {
+    id: 28,
+    slug: "stella-artois-hyundai-christmas",
+    title: "Stella Artois The Hyundai Seoul Christmas Market",
+    client: "Stella Artois",
+    year: "2026",
+    category: "POPUP STORE",
+    scope: "공간디자인",
+    bg: "bg-red-950",
+    description: "",
+    thumbnail: "/works/stella-artois-hyundai-christmas/thumb.webp",
+    images: [
+      "/works/stella-artois-hyundai-christmas/02.jpg",
+      "/works/stella-artois-hyundai-christmas/03.jpg",
+      "/works/stella-artois-hyundai-christmas/04.jpg",
+      "/works/stella-artois-hyundai-christmas/05.jpg",
+      "/works/stella-artois-hyundai-christmas/06.jpg",
+      "/works/stella-artois-hyundai-christmas/07.jpg",
+    ],
+  },
+  {
     id: 26,
     slug: "nutrl-popup",
     title: "NUTRL POP-UP",
